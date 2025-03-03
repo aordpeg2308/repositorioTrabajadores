@@ -2,7 +2,7 @@
 
 @section('contenido')
 <div class="max-w-sm mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
-    <img class="w-full h-64 object-cover" src="{{ asset( $trabajador->foto) }}" alt="Foto de {{ $trabajador->nombre }} {{ $trabajador->apellidos }}">
+    <img class="w-full h-64 object-cover" src="{{ asset( 'storage/' .$trabajador->foto) }}" alt="Foto de {{ $trabajador->nombre }} {{ $trabajador->apellidos }}">
     <div class="p-4">
         <h2 class="text-2xl font-semibold text-purple-700">{{ $trabajador->nombre }} {{ $trabajador->apellidos }}</h2>
         <p class="text-gray-500">{{ $trabajador->departamento }}</p>

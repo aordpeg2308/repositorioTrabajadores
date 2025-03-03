@@ -69,7 +69,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ($trabajadores as $trabajador)
                 <div class="bg-white shadow-md rounded-lg overflow-hidden p-4">
-                    <img src="{{ asset(  $trabajador->foto) }}" alt="{{ $trabajador->nombre }}" class="w-full h-40 object-cover rounded-md">
+                    <img src="{{ asset(  'storage/' .$trabajador->foto) }}" alt="{{ $trabajador->nombre }}" class="w-full h-40 object-cover rounded-md">
 
                     <div class="p-4">
                         <h2 class="text-xl font-bold text-gray-800">{{ $trabajador->nombre }} {{ $trabajador->apellidos }}</h2>
