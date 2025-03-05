@@ -74,7 +74,7 @@ class TrabajadorController extends Controller
                 if($request->hasFile('foto')){
 
                     $nombrearchivo = $request->telefono;
-                    $ruta =  $request->file('foto')->storeAs('avatar', $nombrearchivo.'.jpg', 'public');
+                    $ruta =  $request->file('foto')->storeAs('avatar', $nombrearchivo, 'public');
 
                     $validacion['foto'] = $ruta;
                 }else{
